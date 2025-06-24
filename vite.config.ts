@@ -5,6 +5,11 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 import path from 'path';
 
 export default defineConfig({
+   server: {
+    headers: {
+      "Content-Type": "application/javascript"
+    }
+  },
     base: '/', 
   plugins: [
     vue(),
